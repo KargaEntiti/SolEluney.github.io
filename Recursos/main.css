@@ -1,0 +1,249 @@
+header {
+    background-color: #9c0720;
+    padding: 0;
+    margin: 0;
+}
+
+.titulo {
+    background-color: #9c0720;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 10px;
+}
+li {
+    padding: 0px 10px 10px 10px;
+}
+body {
+    background-color: #ed2745;
+    margin: 0;
+}
+h1 {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(30deg,white,#fffb00);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+h2 {
+    padding: 0;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(30deg,#fffb00,white,rgb(100, 97, 87));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+img {
+    width: 60%;
+    height: 60%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #dc143c;
+    margin:10px 5px;
+
+}
+
+.iconos {
+    width: 65px;
+    height: 10%;
+}
+
+.cajas {
+    display: flex;
+    align-items: self-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/*  COSAS PARA EL CALENDARIO
+ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0;
+}
+
+.first-day {
+    grid-column-start: 5;
+}
+
+.day-name {
+    background-color: #eee;
+    font-weight: bold;
+    text-align: center;
+}
+
+.calendario {
+    text-align: center;
+    width: 300px;
+}
+
+li {
+    text-align: right;
+}
+*/
+
+.texto {
+    width: 95%;
+    height: 250px;
+    background-color: #ff9ea2;
+    border: none;
+    border-radius: 5px;
+    text-align-last: start;
+    margin-right: 5%;
+}
+.mail {
+    border-radius: 5px;
+    width: 50%;
+    text-align: justify;
+    background-color: #ff9ea2;
+    display: block;
+    margin: 15px 0px;
+    padding: 5px;
+    border: none;
+}
+
+.mail:nth-child(2){
+    width: 65%;
+}
+
+.mensajeria {
+    display: flow;
+    text-align: justify;
+    padding: 10px;
+    text-align-last: left;
+    margin: 1px;
+}
+
+.containerMapa {
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+.containerMapa iframe {
+    height: 250px;
+    width: -webkit-fill-available;
+
+}
+.mapa {
+    border-radius: 5px;
+    height: 200px;
+}
+
+.myButton {
+    background-color: rgb(255,158,162); /* #ff9ea2 */
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: none;
+    cursor:pointer;
+}
+
+.myButton:hover {
+    background-color: rgb(225,138,142);
+}
+
+.myButton:active {
+    background-color: rgb(200,118,122); /* #ff9ea2 */
+}
+
+.contacto {
+    padding: 10px;
+    display: flex;
+    text-align: end;
+    margin: 1px;
+    justify-content: space-between;
+}
+
+
+header .contacto {
+    display: block;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    color: white;
+    margin:0px;
+    margin-top: auto;
+    white-space: nowrap;
+}
+
+.slider {
+    width: 95%;
+    margin: inherit;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 1500%;
+
+    animation: cambio 60s infinite alternate linear;
+    /* animation-timing-function: linear; ES LO MISMO QUE LIENAL ARRIBA */
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.slider img {
+    width: 85%;
+    height: 90%;
+    border-radius: 5px;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0%;}
+    4% {margin-left: 0%;}
+    96% {margin-left: -1400%;}
+    100% {margin-left: -1400%;}
+
+}
+
+.box {
+    display: flex;
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border-radius: 5px;
+    margin: 5px 15px;
+    float: left;
+    padding: 15px 100px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+/* Transición iconos*/
+
+.box img{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    left: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.box img.top:hover {
+    width: 75px;
+    height: 75px;
+    opacity: 0;
+}
+/* - - - - - - - - - - - - - - */
+
+footer {
+    margin: 1px;
+}
