@@ -158,6 +158,7 @@ li {
     text-align: end;
     margin: 1px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
