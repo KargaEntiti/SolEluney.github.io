@@ -250,7 +250,7 @@ footer {
     margin: 1px;
 }
 
-@media screen and (min-width: 780px) {
+@media only screen and (min-width: 780px) {
     section {
         display: flex;
         height: 300px;
