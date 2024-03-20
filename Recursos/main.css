@@ -1,9 +1,4 @@
-@media only screen and (min-width: 780px) {
-    section {
-        display: flex;
-        height: 300px;
-        width: 100%;
-    }
+
 header {
     background-color: #9c0720;
     padding: 0;
@@ -372,7 +367,6 @@ section img:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
-}   
 }
 section {
     display: flex;
