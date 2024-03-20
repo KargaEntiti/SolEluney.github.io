@@ -4,10 +4,6 @@ section {
     width: 100%;
 }
 
-::placeholder {
-    color: rgb(53, 0, 22);
-}
-
 @media only screen and (min-width: 780px) {
     section {
         display: flex;
@@ -78,34 +74,9 @@ img {
     justify-content: flex-start;
 }
 
-/*  COSAS PARA EL CALENDARIO
-ol {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    padding: 0;
+::placeholder {
+    color: rgb(53, 0, 22);
 }
-
-.first-day {
-    grid-column-start: 5;
-}
-
-.day-name {
-    background-color: #eee;
-    font-weight: bold;
-    text-align: center;
-}
-
-.calendario {
-    text-align: center;
-    width: 300px;
-}
-
-li {
-    text-align: right;
-}
-*/
-
 .texto {
     width: 95%;
     height: 250px;
