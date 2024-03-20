@@ -1,3 +1,16 @@
+section {
+    display: flex;
+    height: 300px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 780px) {
+    section {
+        display: flex;
+        height: 600px;
+        width: 100%;
+    }
+}
 
 header {
     background-color: #9c0720;
@@ -251,6 +264,7 @@ footer {
     margin: 1px;
 }
 
+
 section img {
     width: 0px;
     flex-grow: 1;
@@ -367,9 +381,4 @@ section img:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-section {
-    display: flex;
-    height: 600px;
-    width: 100%;
 }
