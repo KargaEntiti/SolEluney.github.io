@@ -9,6 +9,7 @@ header {
     padding: 10px;
     margin: 10px 0px;
     border: 10px;
+    width: -webkit-fill-available;
 }
 li {
     padding: 0px 10px 10px 10px;
@@ -247,4 +248,128 @@ p {
 
 footer {
     margin: 1px;
+}
+
+section {
+    display: flex;
+    height: 600px;
+    width: 100%;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: 1s ease;
+    height: 100%;
+    
+    border-radius: 0px;
+    padding: 0px;
+    background-color: #dc143c;
+    margin:0px;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 60%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.anfitrion{
+    margin: 0px;
+    transition: none;
+    object-fit:cover;
+    flex-grow: none;
+    clip-path: margin-box;
+    flex-direction: row-reverse;
+}
+
+.anfitrion img:first-child {
+    animation: anfitrionFC 6s infinite alternate;
+}
+
+@keyframes anfitrionFC {
+    50%{
+    width: 50%;
+    transform: rotate(30deg) translate(-145px);
+    }
+    0% {
+        transform: rotate(0deg) translate(-6%);
+        width: 90%;
+        z-index: 1;
+        opacity: 1;
+    }   
+}
+
+.anfitrion img:last-child {
+    animation: anfitrionLC 6s infinite alternate;
+}
+
+.anfitrion img:hover{
+    width: 0px;
+}
+@keyframes anfitrionLC {
+    50%{
+        width: 50%;
+        transform: rotate(-30deg) translate(-20px);
+    }
+    100% {
+        transform: rotate(0deg);
+        width: 90%;
+        transform: translate(5%);
+        z-index: 1;
+        opacity: 1;
+    }   
+}
+
+.instaFotos img{
+    width: 90%;
+    height: 50%;
+    margin: 0px;
+    padding: 0px;
+    object-fit: cover;
+}
+
+.instaFotos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.instaFotos img:hover {
+    cursor: crosshair;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.instaFotos div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 0% 0% 5%;
+    background-color: rgb(173, 171, 134);
+    margin: 10px 10px;
+    width: 30%;
+    height: max-content;
+}
+
+.instaFotos h3 {
+    translate: 0px;
+    z-index: 1;
+}
+.instaFotos h4 {
+    translate: 0px;
+    z-index: 1;
+}
+
+.cajaCentrada {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
