@@ -4,6 +4,10 @@ section {
     width: 100%;
 }
 
+::placeholder {
+    color: rgb(53, 0, 22);
+}
+
 @media only screen and (min-width: 780px) {
     section {
         display: flex;
