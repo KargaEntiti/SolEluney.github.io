@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Slides Múltiples</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section class="sliders">
+        <!-- Primer slider dentro del section -->
+        <div class="slider" id="slider1">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="../Recursos/Fotos/Anfitrion 01.jpg" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="../Recursos/Fotos/Anfitrion 02.jpg" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="../Recursos/Fotos/baño 1.webp" alt="Slide 3">
+                </div>
+            </div>
+            <div class="indicators">
+                <button class="indicator active" data-index="0"></button>
+                <button class="indicator" data-index="1"></button>
+                <button class="indicator" data-index="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sliders">
+        <div class="slider" id="slider2">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="../Recursos\Fotos/Optimizadas/IMG_20231224_131819.jpg" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="../Recursos\Fotos/Optimizadas/IMG_20231224_131846.jpg">
+                </div>
+            </div>
+            <!-- Botones indicadores -->
+            <div class="indicators">
+                <button class="indicator active" data-index="0"></button>
+                <button class="indicator" data-index="1"></button>
+            </div>
+            <script src="script.js"></script>
+        </div>   
+    </section>
+
+    <section class="sliders">
+        <!-- Segundo slider dentro del section -->
+        <div class="slider" id="slider3">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="slide4.jpg" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="slide5.jpg" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="slide6.jpg" alt="Slide 3">
+                </div>
+            </div>
+            <div class="indicators">
+                <button class="indicator active" data-index="0"></button>
+                <button class="indicator" data-index="1"></button>
+                <button class="indicator" data-index="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
